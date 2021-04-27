@@ -10,16 +10,17 @@ $con = mysqli_connect('localhost', 'contato', 'Contato123@','contato');
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
 $txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
+$txtCPF = $_POST['txtCPF'];
+$txtCEP = $_POST['txtCEP'];
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldCPF`, `fldCEP`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtCPF', '$txtCEP')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
 if($rs)
 {
-	echo "Contact Records Inserted";
+	echo "Seus dados foram enviados.";
 }
 }
 else

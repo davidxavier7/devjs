@@ -19,18 +19,18 @@
 
     <form name="frmContact" class="needs-validation " method="post" action="envia.php">
         <input type="text" name="txtName" id="txtName" placeholder="Nome Completo" value="" /><br />
-        <input type="email" placeholder="E-mail" /><br />
-        <input type="text" id="cel" /><br />
-        <input type="text" placeholder="CPF" id="cpf" /><br />
-        <input type="text" placeholder="CEP" id="cep" /><br />
+        <input type="email" name="txtEmail" id="txtEmail" placeholder="E-mail" /><br />
+        <input type="text" name="txtPhone" id="txtPhone" /><br />
+        <input type="text" placeholder="CPF" name="txtCPF" id="txtCPF" /><br />
+        <input type="text" placeholder="CEP" name="txtCEP" id="txtCEP" /><br />
 
         <input type="submit" name="Submit" id="Submit" value="Click me to Contact" class="btn btn-primary btn-lg btn-block">
         </form>
         <script>
             jQuery(function ($) {
-                $("#cel").mask("(99) 99999-9999");
-                $("#cpf").mask("999.999.999-99");
-                $("#cep").mask("99999-999");
+                $("#txtPhone").mask("(99) 99999-9999");
+                $("#txtCPF").mask("999.999.999-99");
+                $("#txtCEP").mask("99999-999");
             });
         </script>
 

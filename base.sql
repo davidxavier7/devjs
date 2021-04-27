@@ -18,7 +18,8 @@ CREATE TABLE `tbl_contact` (
   `fldName` varchar(50) NOT NULL,
   `fldEmail` varchar(150) NOT NULL,
   `fldPhone` varchar(15) NOT NULL,
-  `fldMessage` text NOT NULL
+  `fldCPF` varchar(15) NOT NULL,
+  `fldCEP` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
