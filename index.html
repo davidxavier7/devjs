@@ -12,7 +12,13 @@
 
 
 <body>
-
+    <script>
+        jQuery(function ($) {
+            $("#txtPhone").mask("(99) 99999-9999");
+            $("#txtCPF").mask("999.999.999-99");
+            $("#txtCEP").mask("99999-999");
+        });
+    </script>
     <h1>Codigo Limpo David XD</h1>
 
     <h2>FORM</h2>
@@ -25,14 +31,8 @@
         <input type="text" placeholder="CEP" name="txtCEP" id="txtCEP" /><br />
 
         <input type="submit" name="Submit" id="Submit" value="Click me to Contact" class="btn btn-primary btn-lg btn-block">
-        </form>
-        <script>
-            jQuery(function ($) {
-                $("#txtPhone").mask("(99) 99999-9999");
-                $("#txtCPF").mask("999.999.999-99");
-                $("#txtCEP").mask("99999-999");
-            });
-        </script>
+    </form>
+
 
 
 </body>
